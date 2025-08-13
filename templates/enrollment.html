@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card p-4 shadow">
+    <h3 class="mb-3 text-warning">Add Enrollment</h3>
+    <form action="/enrollment" method="POST" class="row g-3">
+        <div class="col-md-6"><input class="form-control" name="student_id" placeholder="Student ID"></div>
+        <div class="col-md-6"><input class="form-control" name="course_id" placeholder="Course ID"></div>
+        <div class="col-md-6"><input type="date" class="form-control" name="enroll_date"></div>
+        <div class="col-md-3"><input class="form-control" name="semester" placeholder="Semester"></div>
+        <div class="col-md-3"><input class="form-control" name="status" placeholder="Status"></div>
+        <div class="col-12"><button class="btn btn-warning w-100">Add Enrollment</button></div>
+    </form>
+</div>
+{% endblock %}

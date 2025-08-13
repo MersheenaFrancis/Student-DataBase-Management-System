@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card p-4 shadow">
+    <h3 class="mb-3 text-success">Add Course</h3>
+    <form action="/course" method="POST" class="row g-3">
+        <div class="col-md-6"><input class="form-control" name="course_name" placeholder="Course Name"></div>
+        <div class="col-md-6"><textarea class="form-control" name="description" placeholder="Description"></textarea></div>
+        <div class="col-md-6"><input class="form-control" name="duration" placeholder="Duration"></div>
+        <div class="col-md-6"><input class="form-control" name="fee" placeholder="Fee"></div>
+        <div class="col-12"><button class="btn btn-success w-100">Add Course</button></div>
+    </form>
+</div>
+{% endblock %}
